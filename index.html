@@ -26,12 +26,19 @@
             padding: 10px 20px;
             border: 0;
         }
-        .btn-info{
+        .btn-info {
             background-color: white;
             color: black;
             font-weight: 400;
             font-size: 20px;
             text-transform: uppercase;
+            border-radius: 7px;
+            margin-top: 30px;
+            transition: 500ms;
+        }
+        .btn-info:hover {
+            background-color: red;
+            cursor: pointer;
         }
         .box{
             height: 150px;
@@ -94,13 +101,14 @@
             </div>
         </div>
         
-        <div class="btn-container">
+        <div class="btn-container" onmouseover="btnColorChange()" onmouseout="btnColorRestore()">
             <button type="button" class="btn btn-info" id="btn">color  generator</button>
+            <p style="text-align: center;padding-top: 100px;">Developed by <a href="http://shafiqsuhag.com">Shafiq Suhag</a></p>
         </div>
         
     </main>
     <footer>
-        <p style="text-align: center;">Developed by <a href="http://shafiqsuhag.com">Shafiq Suhag</a></p>
+      
     </footer>
     <div class="img-cls">
         <img src="img/cover.png" alt="" style="width: 100%;">

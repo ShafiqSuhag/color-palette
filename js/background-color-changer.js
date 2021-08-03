@@ -1,9 +1,12 @@
 var btn = document.getElementById('btn');
+var btnInfo = document.getElementsByClassName('btn-info');
 const bodyColor = document.querySelector('.body-bg-color');
 var box = document.getElementsByClassName('box');
 var boxText = document.getElementsByClassName('box-text');
 
 const hex = [0,1,2,3,4,5,6,7,8,9, "A", "B", "C","D", "E", "F" ];
+console.log(btnInfo);
+console.log(box);
 backgroundColorChangerByHexCode();
 
 // color.getElementsByClassName.l
@@ -19,10 +22,24 @@ btn.addEventListener("click",function(){
     backgroundColorChangerByHexCode();
 })
 
-
-
+function btnColorChange (){
+    // btnInfo[0].style.backgroundColor = 'blue';
+    console.log('hello');
+    for(k=0; k< btnInfo.length ; k++){
+        btnInfo[k].style.backgroundColor = hexColorGenerator();
+    }
+}
+function btnColorRestore(){
+    console.log('hello2');
+    for(k=0; k< btnInfo.length ; k++){
+        btnInfo[k].style.backgroundColor = "#ffffff";
+    }
+}
 
 function backgroundColorChangerByHexCode(){
+   
+    // .btn-info:hover {
+    //     background-color: red;
     // console.log(bgColor.length)   
     // color.style.backgroundColor = hexColorGenerator();
     var hexCode = hexColorGenerator();
@@ -36,7 +53,8 @@ function backgroundColorChangerByHexCode(){
         // bgColor[i].style.backgroundColor = 'green';
         
     }
-    // console.log(bodyColor);
+    
+    
    
 }
 
