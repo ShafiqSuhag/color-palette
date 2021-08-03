@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changed</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .body-bg-color{
+            background-color: red;
+        }
+        .btn{
+            padding: 10px 20px;
+            border: 0;
+        }
+        .btn-info{
+            background-color: white;
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: whitesmoke;  
+            border: 1px solid wheat; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box > p{
+            padding: 10px 20px ;
+            background-color: white;
+            color: black;
+        }
+        .box-container {
+             box-shadow: 0 17px 50px rgb(0 0 0 / 50%);
+        }
+        
+        .img-cls {
+            width: 50%;
+         
+            margin: auto;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            box-shadow: 0 0 20px soli;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+        }
+    </style>
+
+    
+</head>
+<body class="body-bg-color">
+    <nav>
+        
+    </nav>
+    <main >
+        <div style="display: flex;" class="box-container">
+            <div class="box">
+                <p class="box-text">...</p>
+            </div>
+            <div class="box">
+                <p class="box-text">...</p>
+            </div>
+            <div class="box">
+                <p class="box-text">...</p>
+            </div>
+            <div class="box">
+                <p class="box-text">...</p>
+            </div>
+            <div class="box">
+                <p class="box-text">...</p>
+            </div>
+            <div class="box">    
+                <p class="box-text">....</p>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <button type="button" class="btn btn-info" id="btn">color  generator</button>
+        </div>
+        
+    </main>
+    <footer>
+        <p style="text-align: center;">Developed by <a href="http://shafiqsuhag.com">Shafiq Suhag</a></p>
+    </footer>
+    <div class="img-cls">
+        <img src="img/cover.png" alt="" style="width: 100%;">
+    </div>
+    <script src="js/background-color-changer.js"></script>
+</body>
+</html>
